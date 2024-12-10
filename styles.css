@@ -1,0 +1,218 @@
+/* Reset geral e estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container centralizado para o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #007BFF, #0056b3); /* Alterado para azul */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 4px solid #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+/* Seção de informações */
+.informacoes {
+    padding: 50px 0;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.informacoes h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.informacoes ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.informacoes li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.informacoes li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #007BFF; /* Alterado para azul */
+    font-size: 1.5rem;
+    top: 0;
+}
+
+/* Seção de lista de bots */
+.lista-bots {
+    background-color: #fff;
+    padding: 60px 0;
+    margin-top: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.lista-bots h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.bot-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bot-item {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bot-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para adicionar ícones nos itens de bot */
+.bot-item h3 {
+    font-size: 1.75rem;
+    color: #007BFF; /* Cor azul */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.bot-item h3 i {
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #007BFF; /* Cor do ícone */
+}
+
+.bot-item p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.bot-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.bot-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.bot-item li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.bot-button {
+    display: inline-block;
+    background-color: #007BFF; /* Azul */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.bot-button i {
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+.bot-button:hover {
+    background-color: #0056b3; /* Alterado para azul escuro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #0056b3; /* Alterado para azul escuro */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bot-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bot-item {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .informacoes h2, .lista-bots h2 {
+        font-size: 2rem;
+    }
+}

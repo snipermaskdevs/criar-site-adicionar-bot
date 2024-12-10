@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Bots ao Discord</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Inclusão da CDN do Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Adicionar Bots ao Discord</h1>
+            <p>Adicione nossos bots ao seu servidor Discord para começar a usar comandos exclusivos.</p>
+        </div>
+    </header>
+
+    <section class="informacoes">
+        <div class="container">
+            <h2>Comandos Disponíveis</h2>
+            <ul>
+                <li><strong>/help</strong> - Exibe a lista de comandos disponíveis.</li>
+                <li><strong>/ping</strong> - Verifica a latência do bot.</li>
+                <li><strong>/userinfo [usuário]</strong> - Exibe informações sobre um usuário.</li>
+                <li><strong>/kick [usuário]</strong> - Expulsa um usuário do servidor.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Lista de Bots -->
+    <section class="lista-bots">
+        <div class="container">
+            <h2>Escolha Seu Bot</h2>
+            <div class="bot-list">
+                <!-- Bot 1 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-user-shield" aria-label="Bot de Administração"></i> Bot 1: [Nome do Bot]</h3>
+                    <p>Este bot oferece diversos comandos para a administração do seu servidor, além de ferramentas de moderação.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/kick [usuário]</strong> - Expulsa um usuário do servidor.</li>
+                        <li><strong>/ban [usuário]</strong> - Banir um usuário do servidor.</li>
+                        <li><strong>/mute [usuário]</strong> - Silencia um usuário temporariamente.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_1&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot</a>
+                </div>
+
+                <!-- Bot 2 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-gamepad" aria-label="Bot de Diversão"></i> Bot 2: [Nome do Bot]</h3>
+                    <p>Este bot é focado em funcionalidades para jogos e diversão no servidor, com integração de jogos e desafios.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/play [jogo]</strong> - Inicia um jogo dentro do servidor.</li>
+                        <li><strong>/quiz</strong> - Inicia uma rodada de quiz com perguntas aleatórias.</li>
+                        <li><strong>/roll [1-100]</strong> - Lança um dado e retorna um número aleatório.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_2&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot</a>
+                </div>
+
+                <!-- Bot 3 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-cloud-sun" aria-label="Bot de Previsão do Tempo"></i> Bot 3: [Nome do Bot]</h3>
+                    <p>Este bot é voltado para a integração com serviços externos e pode ser configurado para realizar tarefas automáticas.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/weather [cidade]</strong> - Exibe a previsão do tempo para uma cidade.</li>
+                        <li><strong>/news</strong> - Exibe as últimas notícias de uma categoria.</li>
+                        <li><strong>/reminder [mensagem]</strong> - Cria um lembrete para você.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_3&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot</a>
+                </div>
+
+                <!-- Bot 4 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-music" aria-label="Bot de Música"></i> Bot 4: [Nome do Bot]</h3>
+                    <p>Este bot oferece integração com música e playlists para criar uma atmosfera divertida no seu servidor.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/play [música]</strong> - Toca uma música no servidor.</li>
+                        <li><strong>/pause</strong> - Pausa a música em reprodução.</li>
+                        <li><strong>/skip</strong> - Pula para a próxima música da fila.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_4&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot</a>
+                </div>
+
+                <!-- Bot 5 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-tasks" aria-label="Bot de Produtividade"></i> Bot 5: [Nome do Bot]</h3>
+                    <p>Este bot tem funções de produtividade, como gerenciamento de tarefas e notas, para ajudar no dia a dia.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/task [tarefa]</strong> - Cria uma nova tarefa.</li>
+                        <li><strong>/tasks</strong> - Exibe a lista de tarefas pendentes.</li>
+                        <li><strong>/remind [mensagem] [tempo]</strong> - Cria um lembrete para um evento futuro.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_5&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot</a>
+                </div>
+
+                <!-- Bot 6 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-cogs" aria-label="Bot de Configurações"></i> Bot 6: [Nome do Bot]</h3>
+                    <p>Este bot oferece uma gama de comandos para controle de servidor, como logs e configurações de permissões.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/setprefix [prefixo]</strong> - Define o prefixo do bot para o servidor.</li>
+                        <li><strong>/setlog [canal]</strong> - Configura o canal para logs do bot.</li>
+                        <li><strong>/setperm [cargo]</strong> - Define permissões para um cargo específico.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_6&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot
+                    </a>
+                </div>
+                <!-- Bot 7 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-brain" aria-label="Bot de Inteligência Artificial"></i> Bot 7: [Nome do Bot]</h3>
+                    <p>Este bot utiliza inteligência artificial para responder perguntas, gerar imagens e oferecer sugestões criativas.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/ask [pergunta]</strong> - Faz uma pergunta e recebe uma resposta baseada em IA.</li>
+                        <li><strong>/generate [imagem]</strong> - Gera uma imagem com base em sua descrição.</li>
+                        <li><strong>/suggest [tema]</strong> - Fornece sugestões ou ideias para um tema específico.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_7&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                    <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot
+                    </a>
+                </div>
+                <!-- Bot 8 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-shield-virus" aria-label="Bot de Segurança"></i> Bot 8: [Nome do Bot]</h3>
+                    <p>Este bot é especializado em segurança, protegendo seu servidor contra spams, links maliciosos e comportamentos suspeitos.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/antispam [ativar/desativar]</strong> - Liga ou desliga o sistema anti-spam no servidor.</li>
+                        <li><strong>/scanlink [link]</strong> - Analisa um link para verificar se é seguro.</li>
+                        <li><strong>/report [usuário]</strong> - Permite relatar um comportamento suspeito à equipe de administração.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_8&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot
+                    </a>
+                </div>
+
+                <!-- Bot 9 -->
+                <div class="bot-item">
+                    <h3><i class="fas fa-lightbulb" aria-label="Bot Educacional"></i> Bot 9: [Nome do Bot]</h3>
+                    <p>Este bot oferece comandos educacionais e é ideal para servidores com foco em aprendizado e troca de conhecimento.</p>
+                    <h4>Comandos:</h4>
+                    <ul>
+                        <li><strong>/translate [texto]</strong> - Traduz texto para o idioma desejado.</li>
+                        <li><strong>/define [palavra]</strong> - Fornece o significado de uma palavra ou expressão.</li>
+                        <li><strong>/quiz [tema]</strong> - Cria quizzes interativos com perguntas sobre o tema escolhido.</li>
+                    </ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_9&scope=bot&permissions=PERMISSOES_DO_BOT" target="_blank" class="bot-button">
+                        <i class="fas fa-plus-circle" aria-label="Adicionar Bot"></i> Adicionar Bot
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Seu Bot Discord. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
